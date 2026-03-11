@@ -1,0 +1,213 @@
+.hotels {
+    width: 100%;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    border-bottom: 1px dotted silver;
+}
+
+.hotels .hotel {
+    padding: 0.77em 11.54em 0.77em 8.46em;
+    border-top: 1px dotted silver;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.hotels .hotel:nth-child(odd) {
+    background-color: #F5F5F5;
+}
+
+.hotels .hotel:hover {
+    background-color: #f3f7d6 !important;
+}
+
+.hotels .hotel-base {
+    float: left;
+    width: 100%;
+}
+
+.hotels .prices-border {
+    z-index: 1;
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    right: 10.77em;
+    box-sizing: border-box;
+    padding: 0.77em 0;
+}
+
+.hotels .prices-border span {
+    background: silver;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.hotels .hotel-foto {
+    width: 6.92em;
+    height: 6.92em;
+    float: left;
+    margin-left: -7.68em;
+}
+
+.hotels .hotel-foto img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.hotels .hotel_name a {
+    color: #FF7F00;
+    text-decoration: underline;
+    font-size: 1.38em;
+}
+
+.hotels .hotel_name a:hover {
+    text-decoration: none;
+}
+
+.hotels .hotel_name img {
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.hotels .location {
+    margin-top: 6px;
+    font-size: 0.85em;
+    background: url("/images/icon_addr.gif") no-repeat;
+    padding-left: 22px;
+    line-height: 1.5;
+}
+
+.hotels .metro {
+    margin-top: 3px;
+    padding-left: 22px;
+    padding-bottom: 3px;
+    padding-top: 1px;
+    background: url("/images/icon_metro2.gif") no-repeat;
+    font-size: 0.85em;
+    line-height: 1.5;
+}
+
+.hotels .metro a {
+    color: #51658B;
+}
+
+.hotels .rate {
+    font-size: 0.8em;
+    background-color: #EEF4BF;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 0.2em 0.4em;
+    margin-top: 0;
+    vertical-align: center;
+}
+
+.hotels .rate span.rate {
+    color: #FF7F00;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+    vertical-align: center;
+    padding: 0.1em;
+}
+
+.hotels .rate a {
+    color: #51658B;
+}
+
+.hotels .prices {
+    float: right;
+    margin-right: -10.77em;
+    box-sizing: border-box;
+    padding-left: 10px;
+    width: 10em;
+    text-align: center;
+}
+
+.hotels .prices .price {
+    font-size: 0.77em;
+    margin-bottom: 1em;
+}
+
+.hotels .prices .price div {
+    margin-top: 0.2em;
+    font-size: 1.6em;
+    font-weight: bolder;
+    color: #728611;
+}
+
+.hotels .submit {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+    margin: 0px;
+    padding: 7px;
+    background-color: #A4C10A;
+    border-radius: 6px;
+}
+
+.hotels .submit a {
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.hotels .submit a:hover {
+    text-decoration: underline;
+}
+
+.hotels .lastOrder {
+    clear: both;
+    color: #728611;
+    margin-top: 0.22em;
+    font-size: 13px;
+    font-family: 'Segoe UI', Roboto, "Helvectica Neue", Arial, sans-serif;
+    font-weight: 400;
+}
+
+/* Стили для последних бронирований */
+.lastOrders .hotel {
+    padding: 0.5em 11em 0.5em 5.6em;
+}
+
+.lastOrders .prices-border {
+    right: 10.5em;
+}
+
+.lastOrders .hotel-foto {
+    width: 4.6em;
+    height: 4.6em;
+    margin-left: -5.1em;
+}
+
+.lastOrders .hotel_name a {
+    font-size: 1.23em;
+}
+
+.lastOrders .prices {
+    margin-right: -10.5em;
+}
+
+.lastOrders .prices .price {
+    font-size: 0.65em;
+}
+
+.lastOrders .rate {
+    font-size: 0.88em;
+}
+
+.lastOrders .lastOrder {
+    font-size: 0.88em;
+}
+
+/* Стили для топ отелей */
+.top .hotel .rate {
+    margin-top: 0.66em;
+    float: none;
+    display: inline-block;
+    clear: both;
+}

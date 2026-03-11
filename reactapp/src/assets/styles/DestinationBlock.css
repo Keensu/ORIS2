@@ -1,0 +1,87 @@
+.dest .dest_row {
+    margin-bottom: 10px;
+    padding: 0px 5px;
+    overflow: hidden;
+}
+
+.dest .dest_row .title {
+    font-size: 1.38em;
+    color: #717171;
+    margin-bottom: 8px;
+}
+
+.dest .dest_row .title a {
+    color: #FF7F00;
+    text-decoration: underline;
+}
+
+.dest .dest_row .title a:hover {
+    color: red;
+}
+
+.dest .photo {
+    float: left;
+    width: 100px;
+    margin-right: 10px;
+    height: 100px;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    box-shadow: 3px 3px 6px #CCCCCC;
+    z-index: 1;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.dest .dest_row .hotel {
+    margin-left: 110px;
+    margin-bottom: 8px;
+    background: url("/images/border.gif") repeat-x left bottom;
+}
+
+.dest .dest_row .hotel div {
+    position: relative;
+    text-align: right;
+    height: 20px;
+}
+
+.dest .dest_row .hotel a {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    max-width: 70%;
+    text-align: left;
+    overflow: hidden;
+    background: white;
+    margin-top: 1px;
+    padding-right: 2px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-decoration: underline;
+}
+
+.dest .dest_row .hotel a:hover {
+    color: red;
+}
+
+.dest .dest_row .hotel span {
+    background: white;
+    color: black;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 767px) {
+    .dest .photo {
+        width: 50px;
+        height: 50px;
+        background-size: contain;
+        margin-bottom: 5px;
+    }
+    .dest .dest_row .hotel {
+        margin-left: 0px;
+        clear: left;
+        margin-bottom: 0;
+        margin-top: 8px;
+        background: none;
+    }
+}

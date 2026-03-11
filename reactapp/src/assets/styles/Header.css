@@ -1,0 +1,406 @@
+.menudiv {
+    padding: 0px 22em 0px 186px;
+    height: 102px;
+    z-index: 505;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.menudiv .logotip {
+    position: absolute;
+    width: 181px;
+    padding: 16px 5px 5px 0px;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.menudiv .logotip img {
+    height: auto;
+    width: 100%;
+}
+
+.menudiv .infoline {
+    width: 100%;
+    height: 55px;
+}
+
+.menudiv .descr {
+    padding-top: 4px;
+}
+
+.menudiv .descr .content {
+    padding-left: 7px;
+}
+
+.menudiv .descr .line-main {
+    display: none;
+    line-height: 18px;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+.menudiv .descr .line1 {
+    color: #8DAD01;
+    font-size: 1.6em;
+    margin-bottom: 2px;
+}
+
+.menudiv .descr .line1 span {
+    color: #5B6253;
+}
+
+.menudiv .descr .line2 {
+    color: #FF7F00;
+    margin-top: 3px;
+}
+
+.menudiv .descr .line2 span {
+    color: #5B6253;
+    margin-right: 5px;
+    font-size: 0.88em;
+    margin-left: 5px;
+}
+
+.menudiv .descr .line2 .word1 {
+    margin-left: 0px;
+}
+
+.menudiv .login {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: left;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 186px;
+}
+
+.menudiv .login .login-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.menudiv .login .content {
+    background: #EEF4BF;
+    float: right;
+    padding: 2px 8px 8px 8px;
+    border-radius: 0px 0px 8px 8px;
+    z-index: 505;
+    position: relative;
+    height: 1.6em;
+}
+
+.menudiv .login .menu-button {
+    display: none;
+    width: 18px;
+    height: 18px;
+    background: url("/images/icon_menu.png");
+    cursor: pointer;
+}
+
+.menudiv .menu-phone {
+    display: none;
+    height: 18px;
+    cursor: pointer;
+}
+
+.menudiv .login .login-link {
+    float: left;
+    margin-left: 5px;
+    padding-top: 3px;
+}
+
+.menudiv .login .login-link:hover {
+    text-decoration: none;
+}
+
+.menudiv .login span.d {
+    float: left;
+    margin-left: 5px;
+    padding-top: 3px;
+}
+
+.menudiv .login .not_authed {
+    color: #758722;
+    padding-top: 5px;
+}
+
+.menudiv .login .not_authed a {
+    color: #758722;
+    font-size: 0.85em;
+}
+
+.menudiv .login .not_authed a.register {
+    color: #FF7F00;
+}
+
+.menudiv .common-links {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 46px;
+    width: 100%;
+}
+
+.menutable {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.menutable .menu {
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    width: 100%;
+}
+
+.menutable .menu .mitem {
+    float: left;
+    width: auto;
+    height: 2.13em;
+    overflow: hidden;
+}
+
+.menutable .menu .mitem_sel {
+    background: #FF7F00;
+}
+
+.menutable .menu .mitem span {
+    display: block;
+    background: url("/images/tab_tl.png") no-repeat;
+    height: 100%;
+    float: left;
+    width: auto;
+    padding: 0px 0px 0px 0.77em;
+}
+
+.menutable .menu .mitem span.l {
+    background: url("/images/tab_tr.png") no-repeat right top;
+    width: 0.77em;
+    padding: 0px;
+}
+
+.menutable .menu .mitem span a {
+    color: #000000;
+    text-decoration: underline;
+    font-size: 1.15em;
+    margin-top: 0.3em;
+    display: block;
+}
+
+.menutable .menu .mitem_sel span a {
+    color: #FFFFFF;
+    text-decoration: none !important;
+}
+
+.menutable .menu_hr {
+    height: 5px;
+    background-color: #FF7F00;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+.menutable .menu_bg {
+    height: 10px;
+    background: url("/images/menu_shadow.jpg") no-repeat;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+
+.menudiv .common-links .phone {
+    height: 3.46em;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #FFFFFF url("/images/phone2.jpg") no-repeat 13px 7px;
+    white-space: nowrap;
+}
+
+.menudiv .common-links .phone div {
+    font-size: 1.54em;
+    padding: 8px 0 0 50px;
+}
+
+.menudiv .common-links .phone a {
+    text-decoration: none;
+    color: #799301;
+}
+
+.menudiv .common-links .phone span {
+    font-style: normal;
+    color: #FF7F00;
+}
+
+.chooseCurrency {
+    margin-right: 7px;
+    border-radius: 5px;
+    position: relative;
+    float: left;
+    background-color: gold;
+}
+
+.chooseCurrency label {
+    color: maroon;
+    float: left;
+    padding: 3px 5px 3px;
+    font-weight: bold;
+    height: 16px;
+    cursor: pointer;
+}
+
+.chooseCurrency label span {
+    display: none;
+}
+
+.chooseCurrency ul {
+    background: white;
+    display: none;
+    position: absolute;
+    width: 20em;
+    top: 22px;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 505;
+    border-radius: 5px 0px 0px 5px;
+    border: 2px solid #8DAD01;
+    max-height: 300px;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.chooseCurrency ul.empty {
+    padding: 5px;
+    text-align: center;
+}
+
+.chooseCurrency-active {
+    border-radius: 5px 5px 0 0;
+    background-color: #8DAD01;
+}
+
+.chooseCurrency-active label {
+    color: white;
+}
+
+.chooseCurrency-active ul {
+    display: block;
+}
+
+.chooseCurrency ul li {
+    color: #71776F;
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px dotted #8DAD01;
+    position: relative;
+}
+
+.chooseCurrency ul li a {
+    color: #71776F !important;
+    display: block;
+    text-decoration: none !important;
+    font-size: 1em !important;
+    padding: 3px 7px 3px 3.3em;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.chooseCurrency ul li.selected {
+    background-color: #EEF4BF;
+    padding: 3px 7px 3px 3.3em;
+}
+
+.chooseCurrency ul li span {
+    display: inline-block;
+    width: 3em;
+    font-weight: bold;
+    position: absolute;
+    top: 3px;
+    left: 7px;
+}
+
+
+@media screen and (max-width: 1240px) and (min-width: 768px) {
+    .menudiv .logotip {
+        width: 129px;
+        padding-top: 8px;
+    }
+    .menudiv {
+        height: 71px;
+        padding-left: 134px;
+    }
+    .menudiv .login {
+        padding-left: 134px;
+    }
+    .menudiv .descr .line2 {
+        display: none;
+    }
+    .menutable .menu {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .menudiv {
+        background-color: rgb(66, 104, 169) !important;
+        height: 44px !important;
+        padding-left: 36px;
+        padding-right: 44px;
+        transition: transform 250ms;
+    }
+    .menudiv .logotip {
+        width: 24px !important;
+        height: 24px !important;
+        top: 10px !important;
+        padding: 0 !important;
+        left: 6px !important;
+    }
+    .menudiv .logotip img {
+        display: none;
+    }
+    .menudiv .logotip a {
+        display: block;
+        background: url("/images/logo_icon.png") no-repeat;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+    .menudiv .login {
+        width: 46px;
+        height: 18px;
+        top: 13px;
+        padding: 0;
+        right: 13px;
+        left: auto;
+    }
+    .menudiv .login .menu-button {
+        display: block;
+        float: right;
+    }
+    .menudiv .menu-phone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: left;
+        text-decoration: none;
+        color: white;
+    }
+    .menudiv .infoline .mobile-phone {
+        display: flex !important;
+        justify-content: center;
+    }
+}
