@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import HotelCard from '../hotel/HotelCard';
-import { lastOrders } from '../../data/hotels';
 
 const LastOrders = () => {
+  const [lastOrders, setLastOrders] = useState([]);
+
+  useEffect(() => {
+    fetch('/api/hotels.json')
+      .then(response => response.json())
+      .then(data => setLastOrders(data.lastOrders))
+      .catch(error => console.error('Ошибка при загрузке данных:', error));
+  }, []);
+
   return (
     <div className="last-orders">
       <div className="h1">Последние бронирования</div>

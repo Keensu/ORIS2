@@ -55,6 +55,7 @@
 .menudiv .descr .line2 {
     color: #FF7F00;
     margin-top: 3px;
+
 }
 
 .menudiv .descr .line2 span {
@@ -93,7 +94,7 @@
     border-radius: 0px 0px 8px 8px;
     z-index: 505;
     position: relative;
-    height: 1.6em;
+    height: 2.6em;
 }
 
 .menudiv .login .menu-button {
@@ -249,6 +250,7 @@
     position: relative;
     float: left;
     background-color: gold;
+    height: 1.7em;
 }
 
 .chooseCurrency label {

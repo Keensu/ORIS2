@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import SearchForm from '../components/search/SearchForm';
@@ -6,11 +7,24 @@ import PopularDestinations from '../components/sections/PopularDestinations';
 import LastOrders from '../components/sections/LastOrders';
 import CityHotels from '../components/search/CityHotels';
 import PromoSection from '../components/sections/PromoSection';
-import ModalPlacesAvailable from '../components/modals/ModalPlacesAvailable';
-import { topMoscowHotels, topSpbHotels, topNnHotels } from '../data/hotels';
 import '../assets/styles/HomePage.css';
 
 const HomePage = () => {
+  const [topMoscowHotels, setTopMoscowHotels] = useState([]);
+  const [topSpbHotels, setTopSpbHotels] = useState([]);
+  const [topNnHotels, setTopNnHotels] = useState([]);
+
+  useEffect(() => {
+    fetch('/api/hotels.json')
+      .then(response => response.json())
+      .then(data => {
+        setTopMoscowHotels(data.topMoscowHotels);
+        setTopSpbHotels(data.topSpbHotels);
+        setTopNnHotels(data.topNnHotels);
+      })
+      .catch(error => console.error('Ошибка при загрузке данных:', error));
+  }, []);
+
   return (
     <div>
       <div className="body_main">
@@ -62,8 +76,6 @@ const HomePage = () => {
             </div>
             
             <PromoSection />
-            
-            <ModalPlacesAvailable />
           </div>
         </main>
       </div>
