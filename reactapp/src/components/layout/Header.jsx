@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../../assets/styles/Header.css';
 
 const Header = () => {
@@ -8,9 +9,9 @@ const Header = () => {
   return (
     <header className="menudiv menudiv-phone">
       <div className="logotip">
-        <a href="/" title="ВашОтель.RU - моментальное бронирование гостиниц">
+        <Link to="/" title="ВашОтель.RU - моментальное бронирование гостиниц">
           <img loading="lazy" src="/images/logo.gif" alt="ВашОтель.RU - моментальное бронирование гостиниц" />
-        </a>
+        </Link>
       </div>
       <div className="infoline">
         <div className="descr">

@@ -1,19 +1,55 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import ChildrenManager from '../booking/ChildrenManager';
 import '../../assets/styles/SearchForm.css';
 
-const SearchForm = ({ formId = 'searchForm', buttonText = 'Найти гостиницу!' }) => {
+const SearchForm = ({ formId = 'searchForm', buttonText = 'Найти гостиницу!', onSearch }) => {
   const [showPromo, setShowPromo] = useState(false);
+  const navigate = useNavigate();
 
   const handleCityClick = (e, city) => {
     e.preventDefault();
     document.querySelector(`#${formId} input[name="object_name"]`).value = city;
   };
 
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    
+    const cityInput = document.querySelector(`#${formId} input[name="object_name"]`);
+    const checkInInput = document.querySelector(`#${formId} input[name="date_start"]`);
+    const checkOutInput = document.querySelector(`#${formId} input[name="date_end"]`);
+    const roomsInput = document.querySelector(`#${formId}_rooms_count`);
+    
+    const city = cityInput ? cityInput.value : '';
+    const checkIn = checkInInput ? checkInInput.value : '';
+    const checkOut = checkOutInput ? checkOutInput.value : '';
+    const rooms = roomsInput ? roomsInput.value : '1';
+
+    if (!city.trim()) {
+      alert('Пожалуйста, выберите город');
+      return;
+    }
+
+    // Если есть callback функция onSearch (для SearchPage), используем её
+    if (onSearch) {
+      onSearch(city);
+    }
+
+    // Навигируем на страницу поиска с параметрами
+    const searchParams = new URLSearchParams({
+      city: city,
+      ...(checkIn && { checkIn: checkIn }),
+      ...(checkOut && { checkOut: checkOut }),
+      ...(rooms && { rooms: rooms })
+    });
+
+    navigate(`/search?${searchParams.toString()}`);
+  };
+
   return (
     <div className="searchform border_radius_10" id={formId}>
       <div className="title">Поиск гостиниц</div>
-      <form name={`${formId}_form`} action="#" method="get">
+      <form name={`${formId}_form`} onSubmit={handleFormSubmit}>
         <input type="hidden" name="act" value="search" />
         <input type="hidden" name="searchID" value="" className="search_id" />
         <input type="hidden" name="hotel" value="" />
@@ -29,7 +65,7 @@ const SearchForm = ({ formId = 'searchForm', buttonText = 'Найти гости
               <div id={`${formId}_object_name`} className="elContent">
                 <div>
                   <label><img src="/images/icon_delete.gif" width="9" height="9" alt="x" /></label>
-                  <input className="ym-record-keys" type="text" placeholder="Город, отель, аэропорт, вокзал, метро, точный адрес" name="object_name" value="" autoComplete="off" />
+                  <input className="ym-record-keys" type="text" placeholder="Город, отель, аэропорт, вокзал, метро, точный адрес" name="object_name" autoComplete="off" />
                 </div>
               </div>
             </div>
@@ -47,13 +83,13 @@ const SearchForm = ({ formId = 'searchForm', buttonText = 'Найти гости
             <div style={{ marginBottom: '10px' }}>
               <div className="dateDiv" style={{ marginBottom: '5px' }}>
                 <div>
-                  <input type="text" name="date_start" className="date-input" value="" placeholder="Введите дату заезда" />
+                  <input type="date" name="date_start" className="date-input" placeholder="Введите дату заезда" />
                 </div>
                 <img alt="" align="absmiddle" src="/images/calendar_24x24.png" width="24" height="24" title="Дата заезда" style={{ opacity: 0.5, cursor: 'default' }} />
               </div>
               <div className="dateDiv">
                 <div>
-                  <input type="text" name="date_end" className="date-input" value="" placeholder="Введите дату выезда" />
+                  <input type="date" name="date_end" className="date-input" placeholder="Введите дату выезда" />
                 </div>
                 <img alt="" align="absmiddle" src="/images/calendar_24x24.png" width="24" height="24" title="Дата выезда" style={{ opacity: 0.5, cursor: 'default' }} />
               </div>
