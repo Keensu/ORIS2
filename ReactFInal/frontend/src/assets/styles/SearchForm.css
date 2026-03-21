@@ -1,0 +1,283 @@
+.searchform {
+    width: 31em;
+    padding: 0.77em;
+    background-color: #a4c10a;
+    color: white;
+    margin-bottom: 1.2em;
+}
+
+.searchform input, 
+.searchform select {
+    font-size: 1.2em;
+}
+
+.searchform .title {
+    font-size: 1.7em;
+    text-align: center;
+    padding: 0px 0px 0.45em;
+}
+
+.searchform .formint {
+    padding: 0px 0px 4px;
+}
+
+.searchform .formint .title2 {
+    font-size: 1.3em;
+    padding-bottom: 0.5em;
+}
+
+.searchform .formint .title2 img {
+    margin-left: 5px;
+}
+
+.searchform .formint .step2 .title2,
+.searchform .formint .step3 .title2,
+.searchform .formint .step4 .title2 {
+    padding-top: 0.8em;
+}
+
+.searchform .formint .title3 {
+    color: #FAFFAE;
+    padding-bottom: 0.3em;
+}
+
+.searchform .formint .search_object {
+    width: 100%;
+    float: none;
+    height: auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.searchform .formint .search_object .elContent {
+    background-color: transparent;
+}
+
+.searchform .formint .search_object .elContent div {
+    padding-left: 54px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.searchform .formint .search_object .elContent div label {
+    position: absolute;
+    top: 0.7em;
+    right: 0.4em;
+    z-index: 100;
+    width: 0.7em;
+    height: 0.7em;
+    cursor: pointer;
+    display: none;
+}
+
+.searchform .formint .search_object .elContent input {
+    margin: 0px;
+    margin-left: -54px;
+    width: 111.5%;
+    display: block;
+    border: 0px solid;
+    padding: 5px 25px 5px 29px;
+    color: black;
+    border-radius: 3px;
+    z-index: 1;
+    background-position: 7px 0.45em;
+    background-repeat: no-repeat;
+    background-image: url("/images/search_16x16.png");
+    background-color: white;
+}
+
+.searchform .formint ul.most_wanted_cities {
+    clear: both;
+    padding: 0px;
+    margin: 0.3em 0 0;
+    float: none;
+    overflow: hidden;
+}
+
+.searchform .formint .most_wanted_cities li {
+    float: left;
+    margin-bottom: 0.1em;
+    list-style-type: none;
+    padding: 0px;
+    margin-right: 0.7em;
+}
+
+.searchform .formint .most_wanted_cities li a {
+    float: left;
+    border-bottom: 1px dashed;
+    text-decoration: none;
+    color: #FAFFAE;
+}
+
+.searchform .formint .most_wanted_cities li a:hover {
+    color: white;
+}
+
+.searchform .formint .SFroomsData {
+    float: left;
+    padding: 0px 0px 10px 0px;
+    width: 100%;
+}
+
+.searchform .formint .SFroomsData .SFroomsData_header div {
+    font-size: 0.77em;
+    color: #FAFFAE;
+    padding-bottom: 2px;
+    width: 33%;
+    float: left;
+}
+
+.searchform .formint .SFroomsData .SFroomsData_content {
+    clear: both;
+}
+
+.searchform .formint .SFroomsData .SFroomsData_content div.d {
+    float: left;
+    width: 33%;
+    padding-bottom: 2px;
+}
+
+.searchform .formint .dateDiv {
+    clear: both;
+    height: 2.28em;
+    position: relative;
+    border-radius: 3px;
+    background: white;
+    overflow: hidden;
+    border: 1px solid white;
+}
+
+.searchform .formint .dateDiv div {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    padding-right: 2.4em;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid white;
+}
+
+.searchform .formint .dateDiv img {
+    position: absolute;
+    width: 1.8em;
+    height: 1.8em;
+    right: 0.3em;
+    top: 0.3em;
+    opacity: 0.5;
+    cursor: default;
+}
+
+.searchform .formint .date-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    color: black;
+    box-sizing: border-box;
+}
+
+.searchform .formint .date-input:focus {
+    outline: none;
+}
+
+.searchform .formint .SFroomsData_row {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+}
+
+.searchform .formint .SFroomsData_column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.searchform .formint .styled-select {
+    appearance: none;
+    background: #ffffff;
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 3px 10px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+
+.searchform .formint .stepAdvertActionCode {
+    margin-top: 10px;
+}
+
+.searchform .formint .stepAdvertActionCode a {
+    color: #FAFFAE;
+    text-decoration: underline;
+}
+
+.searchform .formint .stepAdvertActionCode a:hover {
+    color: white;
+}
+
+.searchform .formint .stepAdvertActionCode_content {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+}
+
+.searchform .formint .stepAdvertActionCode_content input {
+    width: 100%;
+    margin-top: 3px;
+    padding: 3px;
+}
+
+.searchform .searchButton {
+    text-align: center;
+    padding: 10px 0px 4px;
+}
+
+.searchform .searchButton input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 1.8em;
+    padding: 0.3em 0.7em;
+    border: 0px;
+    background-color: gold;
+    border-radius: 5px;
+    color: maroon;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.searchform .searchButton input:hover {
+    background-color: #ffd700;
+}
+
+/* Адаптация для мобильных */
+@media screen and (max-width: 767px) {
+    .searchform {
+        background-color: rgb(169, 188, 221);
+        color: #2e4a7b;
+        padding: 7px;
+        width: auto;
+    }
+    .searchform .formint .step {
+        margin-top: 8px;
+    }
+    .searchform .formint .step:first-child {
+        margin-top: 0;
+    }
+    .searchform .formint .search_object {
+        border: 1px solid silver;
+        border-radius: 3px;
+    }
+    .searchform input, 
+    .searchform select {
+        background-color: white;
+    }
+    .searchform .formint .most_wanted_cities li a {
+        color: #2e4a7b;
+    }
+}

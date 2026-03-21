@@ -1,0 +1,317 @@
+{
+  "destinations": [
+    {
+      "city": "Гостиницы Москвы",
+      "count": "14446",
+      "image": "/images/1.png",
+      "hotels": [
+        { "name": "Гостиница Коломенская", "price": "2300", "link": "#" },
+        { "name": "Гостиница Гагаринский", "price": "3200", "link": "#" },
+        { "name": "Гостиница Юность", "price": "5500", "link": "/hotel.html" },
+        { "name": "Гостиница \"Берлин\"", "price": "3900", "link": "#" }
+      ]
+    },
+    {
+      "city": "Гостиницы Санкт-Петербурга",
+      "count": "15919",
+      "image": "/images/3.jpg",
+      "hotels": [
+        { "name": "Гостиница Русь", "price": "3900", "link": "#" },
+        { "name": "Арт-отель Карелия", "price": "3100", "link": "#" },
+        { "name": "Гостиница Россия", "price": "3410", "link": "#" },
+        { "name": "Гостевой дом Володарский", "price": "3900", "link": "#" }
+      ]
+    },
+    {
+      "city": "Гостиницы Нижнего Новгорода",
+      "count": "1664",
+      "image": "/images/7.jpg",
+      "hotels": [
+        { "name": "Гостиница Заречная", "price": "5300", "link": "#" },
+        { "name": "Отель Ибис Нижний Новгород", "price": "3200", "link": "#" },
+        { "name": "Отель Саврасовская", "price": "2700", "link": "#" },
+        { "name": "Гостиница Автозаводская", "price": "5850", "link": "#" }
+      ]
+    }
+  ],
+  "lastOrders": [
+    {
+      "id": "583942",
+      "name": "Отель Timhotel Paris Gare Montparnasse",
+      "stars": 3,
+      "locality": "Париж",
+      "address": "",
+      "image": "/images/a44c1e385c5ffc33288d7ce7159c0df2f9087e9d.jpeg",
+      "price": "7700",
+      "rating": "4.8",
+      "reviews": "2",
+      "lastOrder": "3 час. 4 мин. назад",
+      "link": "#"
+    },
+    {
+      "id": "10671",
+      "name": "Отель ibis Styles Paris Nation Porte De Montreuil",
+      "stars": 3,
+      "locality": "Париж",
+      "address": "",
+      "image": "/images/6c5f09ba56db26f0f4e3b7e823253997d885772d.jpeg",
+      "price": "2200",
+      "rating": "5",
+      "reviews": "37",
+      "lastOrder": "3 час. 8 мин. назад",
+      "link": "#"
+    },
+    {
+      "id": "3249252",
+      "name": "Отель Xenophon Hotel",
+      "stars": 4,
+      "locality": "Афины",
+      "address": "",
+      "image": "/images/d737e537f8c0aaedd0fd10ce5e2788f3c4c51f43.JPEG",
+      "price": "4200",
+      "rating": "3.5",
+      "lastOrder": "5 час. 4 мин. назад",
+      "link": "#"
+    },
+    {
+      "id": "5270333",
+      "name": "Отель B&B Hotel Wien-Stadthalle",
+      "stars": 3,
+      "locality": "Вена",
+      "address": "",
+      "image": "/images/e55dcc3637fc1f3dccbabdd91f07a77cc58044bf.JPEG",
+      "price": "5800",
+      "lastOrder": "5 час. 16 мин. назад",
+      "link": "#"
+    },
+    {
+      "id": "1377",
+      "name": "Отель Мандарин Москва 4*",
+      "stars": 4,
+      "locality": "Москва",
+      "address": "Ольховская ул., д. 23",
+      "image": "/images/0000001938889321_852130.jpg",
+      "price": "4800",
+      "rating": "4.0",
+      "reviews": "156",
+      "metro": [{ "name": "Красносельская", "distance": "597 м" }],
+      "lastOrder": "44 мин. назад",
+      "link": "#"
+    },
+    {
+      "id": "1555",
+      "name": "Гостиница Юность",
+      "stars": 3,
+      "locality": "Москва",
+      "address": "ул. Хамовнический Вал, д. 34",
+      "image": "/images/ece96037a0afdbe6542053ee625eaa315ddc9ed5.JPEG",
+      "price": "5500",
+      "rating": "4.7",
+      "reviews": "299",
+      "metro": [{ "name": "Спортивная", "distance": "123 м" }],
+      "lastOrder": "3 час. 44 мин. назад",
+      "link": "/hotel.html"
+    },
+    {
+      "id": "1",
+      "name": "Мини-отель Петровка 17",
+      "stars": 3,
+      "locality": "Москва",
+      "address": "ул. Петровка, д. 17",
+      "image": "/images/0000002550848237_473639.jpg",
+      "price": "3500",
+      "rating": "4.5",
+      "reviews": "78",
+      "metro": [{ "name": "Театральная", "distance": "350 м" }],
+      "lastOrder": "2 час. 23 мин. назад",
+      "link": "#"
+    }
+  ],
+  "topMoscowHotels": [
+    {
+      "id": "1555",
+      "name": "Гостиница Юность",
+      "stars": 3,
+      "locality": "Москва",
+      "address": "ул. Хамовнический Вал, д. 34",
+      "image": "/images/ece96037a0afdbe6542053ee625eaa315ddc9ed5.JPEG",
+      "price": "5500",
+      "rating": "4.7",
+      "reviews": "299",
+      "metro": [
+        { "name": "Спортивная", "distance": "123 м" },
+        { "name": "Лужники", "distance": "210 м" }
+      ],
+      "lastOrder": "44 мин. назад",
+      "link": "/hotel.html"
+    },
+    {
+      "id": "3226621",
+      "name": "Гостиница \"Берлин\"",
+      "stars": 3,
+      "locality": "Москва",
+      "address": "ул. Малая Юшуньская, д.1. корп. 2",
+      "image": "/images/0000001094978059_948517.jpg",
+      "price": "4400",
+      "rating": "5",
+      "reviews": "188",
+      "metro": [
+        { "name": "Каховская", "distance": "325 м" },
+        { "name": "Севастопольская", "distance": "389 м" }
+      ],
+      "lastOrder": "16 февраля",
+      "link": "#"
+    },
+    {
+      "id": "1377",
+      "name": "Отель Мандарин Москва",
+      "stars": 4,
+      "locality": "Москва",
+      "address": "Ольховская ул., д. 23",
+      "image": "/images/0000001938889321_852130.jpg",
+      "price": "4800",
+      "rating": "4.3",
+      "reviews": "156",
+      "metro": [
+        { "name": "Красносельская", "distance": "597 м" },
+        { "name": "Бауманская", "distance": "736 м" }
+      ],
+      "lastOrder": "12 февраля",
+      "link": "#"
+    },
+    {
+      "id": "4402442",
+      "name": "Гостиница Академическая",
+      "stars": 3,
+      "locality": "Москва",
+      "address": "ул. Донская, д. 1",
+      "image": "/images/4179d9e34940a65be131835247cda79c.jpg",
+      "price": "5100",
+      "rating": "4.6",
+      "reviews": "218",
+      "metro": [
+        { "name": "Октябрьская", "distance": "361 м" },
+        { "name": "Добрынинская", "distance": "774 м" }
+      ],
+      "lastOrder": "8 февраля",
+      "link": "#"
+    }
+  ],
+  "topSpbHotels": [
+    {
+      "id": "1232",
+      "name": "Гостиница Русь",
+      "stars": 4,
+      "locality": "Санкт-Петербург",
+      "address": "ул. Артиллерийская, д. 1",
+      "image": "/images/0000001474381638_144078.jpg",
+      "price": "3900",
+      "rating": "3.9",
+      "reviews": "145",
+      "metro": [
+        { "name": "Чернышевская", "distance": "536 м" },
+        { "name": "Маяковская", "distance": "1.07 км" }
+      ],
+      "lastOrder": "28 января",
+      "link": "#"
+    },
+    {
+      "id": "133179",
+      "name": "Арт-отель Карелия",
+      "stars": 4,
+      "locality": "Санкт-Петербург",
+      "address": "ул. Маршала Тухачевского, 27/2",
+      "image": "/images/0000002906309150_353006.jpg",
+      "price": "3100",
+      "rating": "4.2",
+      "reviews": "89",
+      "metro": [{ "name": "Новочеркасская", "distance": "1.2 км" }],
+      "lastOrder": "9 февраля",
+      "link": "#"
+    },
+    {
+      "id": "103",
+      "name": "Гостиница Россия",
+      "stars": 3,
+      "locality": "Санкт-Петербург",
+      "address": "пл. Чернышевского, д. 11",
+      "image": "/images/0000000773570029_164436.jpg",
+      "price": "3410",
+      "rating": "3.8",
+      "reviews": "203",
+      "metro": [{ "name": "Парк Победы", "distance": "477 м" }],
+      "lastOrder": "15 января",
+      "link": "#"
+    },
+    {
+      "id": "5557343",
+      "name": "Гостевой дом Володарский",
+      "stars": 3,
+      "locality": "Санкт-Петербург",
+      "address": "Территория Сергиево, ул. Мичурина, д. 1",
+      "image": "/images/d78c25800dbf2c4176f341ba3563a7d0dc8ca82c.JPEG",
+      "price": "3900",
+      "rating": "4.5",
+      "reviews": "67",
+      "lastOrder": "28 ноября",
+      "link": "#"
+    }
+  ],
+  "topNnHotels": [
+    {
+      "id": "813191",
+      "name": "Гостиница Заречная",
+      "stars": 3,
+      "locality": "Нижний Новгород",
+      "address": "проспект Ленина, д. 36",
+      "image": "/images/0000000267313223_608227.jpg",
+      "price": "5300",
+      "rating": "3.9",
+      "reviews": "221",
+      "metro": [{ "name": "Заречная", "distance": "164 м" }],
+      "lastOrder": "20 января",
+      "link": "#"
+    },
+    {
+      "id": "10729",
+      "name": "Отель Ибис Нижний Новгород",
+      "stars": 3,
+      "locality": "Нижний Новгород",
+      "address": "ул. Максима Горького, д. 115",
+      "image": "/images/1c316aebebf7813a89338d47f9acaca09683aa87.jpeg",
+      "price": "3200",
+      "rating": "3.8",
+      "reviews": "345",
+      "metro": [{ "name": "Горьковская", "distance": "446 м" }],
+      "lastOrder": "11 декабря",
+      "link": "#"
+    },
+    {
+      "id": "5054673",
+      "name": "Отель Саврасовская",
+      "stars": 3,
+      "locality": "Нижний Новгород",
+      "address": "ул. Верхняя, д. 18",
+      "image": "/images/5b1b1ce377ef9a9ff7a6d82d8019772377edbacb.jpeg",
+      "price": "2700",
+      "rating": "4.2",
+      "reviews": "105",
+      "lastOrder": "22 декабря",
+      "link": "#"
+    },
+    {
+      "id": "313",
+      "name": "Гостиница Автозаводская",
+      "stars": 3,
+      "locality": "Нижний Новгород",
+      "address": "Молодежный пр-т, 6",
+      "image": "/images/0000001330303210_895836.jpg",
+      "price": "5850",
+      "rating": "4.0",
+      "reviews": "187",
+      "metro": [{ "name": "Парк культуры", "distance": "263 м" }],
+      "lastOrder": "5 февраля",
+      "link": "#"
+    }
+  ]
+}

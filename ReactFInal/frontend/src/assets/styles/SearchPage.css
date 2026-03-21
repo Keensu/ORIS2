@@ -1,0 +1,151 @@
+/* Страница поиска - основные стили */
+.search-page {
+  padding-top: 20px;
+  overflow: hidden;
+}
+
+.search-page .left {
+  width: 45%;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.search-page .left .int {
+  padding-right: 7px;
+}
+
+/* Контейнер с результатами поиска */
+.search-results-container {
+  width: 55%;
+  float: right;
+}
+
+.search-results-container .int {
+  padding-left: 7px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Информация о поиске */
+.search-info {
+  background-color: white;
+  padding: 15px;
+  border-left: 4px solid #a4c10a;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.search-info p {
+  margin: 8px 0;
+  font-size: 1em;
+  color: #333;
+}
+
+.search-info strong {
+  color: #728611;
+  font-weight: bold;
+}
+
+.results-count {
+  font-size: 1.1em;
+  color: #728611;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Результаты поиска */
+.hotels.search-results {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.hotels.search-results .hotelcard {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.hotels.search-results .hotelcard:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Загрузка */
+.loading {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 1.2em;
+  color: #728611;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Нет результатов */
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.no-results p {
+  font-size: 1.1em;
+  color: #666;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.no-results p:first-child {
+  color: #333;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .search-page .left {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .search-page .right {
+    width: 100%;
+  }
+
+  .search-results-container .int {
+    padding-left: 7px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-info {
+    padding: 12px;
+    font-size: 0.9em;
+  }
+
+  .hotels.search-results {
+    gap: 12px;
+  }
+
+  .hotels.search-results .hotelcard {
+    padding: 12px;
+  }
+
+  .search-results-container .int {
+    padding: 10px;
+  }
+}

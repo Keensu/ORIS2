@@ -1,0 +1,178 @@
+.index div.left {
+    width: 45%;
+    float: left;
+}
+
+.index div.right {
+    width: 55%;
+    float: right;
+}
+
+.index div.right div.int {
+    padding-left: 7px;
+}
+
+.index div.left div.int {
+    padding-right: 7px;
+}
+
+.index .searchform {
+    width: auto;
+}
+
+.index .searchform input,
+.index .searchform select {
+    font-size: 1.2em;
+}
+
+.index .searchform .title2 {
+    font-size: 1.54em;
+}
+
+.index .descr ul.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.index .descr ul.features-list li {
+    background: url("/images/icon_ok2.gif") no-repeat left 5px;
+    padding: 4px 0 6px 32px;
+    font-size: 1.1em;
+    line-height: 1.4;
+    list-style: none;
+    margin-bottom: 2px;
+}
+
+.index .descr ul.features-list li .feature-title {
+    color: #FF7F00;
+    font-size: 1.15em;
+    font-weight: normal;
+}
+
+.index .descr ul.features-list li .feature-description {
+    color: #717171;
+    font-size: 0.95em;
+}
+
+.index div.right .cityTitle {
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.index div.right .cityTitle a {
+    font-size: 1.54em;
+    font-weight: normal;
+    color: #728611;
+    text-decoration: underline;
+}
+
+.index div.right .cityTitle a:hover {
+    color: red;
+}
+
+.index div.right .links {
+    margin-bottom: 10px;
+}
+
+.index div.right .links a {
+    color: #51658B;
+    font-size: 0.92em;
+}
+
+.index div.right .photo {
+    display: block;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    box-shadow: 3px 3px 6px #CCCCCC;
+    position: relative;
+    text-decoration: none;
+}
+
+.promo {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px dotted silver;
+}
+
+.promo p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.promo h2 {
+    margin: 20px 0 10px;
+}
+
+.promo ul {
+    margin: 10px 0;
+}
+
+.text-block-wrapper {
+    position: relative;
+    margin-top: 20px;
+}
+
+/* Модальное окно */
+#modal_formPlacesAvailable {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.3);
+    z-index: 10000;
+    max-width: 500px;
+    width: 90%;
+}
+
+#modal_formPlacesAvailable .searchform {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+#modal_formPlacesAvailable .dateDiv_calendar {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+
+#modal_formPlacesAvailable .dateDiv_calendar input[type="date"] {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 1240px) {
+    .promo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .index div.left, 
+    .index div.right {
+        width: 100%;
+        float: none;
+    }
+    .index div.right div.int, 
+    .index div.left div.int {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .index div.right .photo {
+        height: 150px;
+    }
+}
